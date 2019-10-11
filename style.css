@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+  color: #5a5a5a;
+}
+
+
+.floating {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.kais {
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 99;
+    cursor: crosshair;
+
+}
+
+.no_border {
+    border: 0px solid black;
+}
+
+.kais_200 {
+    background: url("kais_200.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
+    width: 200px;
+    height: 277px;
+
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background: url("karoui.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
+}
+
+#controls {
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    z-index: 200;
+}
+.container {
+    position: relative;
+    padding: 1rem;
+}
+.file_label {
+    margin-bottom: 1rem; 
+}
+
+.file {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+#img_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
